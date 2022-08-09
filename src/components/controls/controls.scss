@@ -1,0 +1,35 @@
+.controls {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    background-color: #333;
+    width: 100vw;
+    transition: height .3s ease-in-out;
+    z-index: 100;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -6px 12px 0px rgba(50, 50, 50, 0.75);
+    overflow: hidden;
+    
+
+    &.is-expanded {
+        height: 60vh;
+        overflow-y: auto;
+    }
+
+    .interactor {
+        height: 40px;
+        cursor: pointer;
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            border: 2px solid #fff;
+            background-color: #fff;
+            width: 70px;
+            transform: translateX(-50%);
+        }
+    }
+}

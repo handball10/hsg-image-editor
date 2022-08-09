@@ -1,0 +1,53 @@
+.canvas-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.canvas {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     padding-bottom: 100%;
+    // }
+
+    // .drawer {
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    // }
+
+    .drawer,
+    .wrapper,
+    .background {
+        height: 100%;
+        width: 100%;
+
+        user-select: none;
+    }
+
+}
+
+.toolbar {
+
+    display: flex;
+    width: 100%;
+
+    .create {
+        width: 100%;
+        border-radius: 0;
+        padding: .5rem;
+        background-color: var(--hsg-green-70);
+        border: 0;
+        color: #fff;
+        font-weight: bold;
+        border-bottom: 2px solid rgba(255, 255, 255, .7);
+        cursor: pointer;
+    }
+}
